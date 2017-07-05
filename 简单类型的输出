@@ -1,0 +1,45 @@
+public class Day_02 {
+	public static void main(String[] args){
+		
+		/*如果是sex为true并且薪水大于8000就输出高富帅,否则就是穷屌丝,
+		如果sex为false,并且薪水大于8000,输出白富美否则就是女屌丝*/
+		boolean sex=true;
+		int salary=10000;
+		
+		if(sex){
+			if(salary>8000){
+				System.out.println("高富帅");
+			}else{
+				System.out.println("穷屌丝");
+			}
+		}
+		if(!sex){
+			if(salary>8000){
+				System.out.println("白富美");
+			}else{
+				System.out.println("女屌丝");
+			}
+		}
+		
+/*		创建变量 姓名(String) 性别(boolean) 年龄(int) 身高(float)  体重(double) 
+		电话(long),工资(int)赋给相应的值,然后控制台打印输出*/
+		String name="张三";
+		boolean sex2=true;
+		int age=18;
+		float h=1.75f;
+		double w=65;
+		long phone = 12345678900l;
+		int salary2=10000;
+		System.out.println("姓名："+name);
+		if(sex2){
+			System.out.println("性别：男");
+		}else{
+			System.out.println("性别：女");
+		}
+		System.out.println("年龄："+age+"岁");
+		System.out.println("身高："+h+"cm");
+		System.out.println("体重："+w+"kg");
+		System.out.println("电话："+phone);
+		System.out.println("工资："+salary2+"元");
+	}
+}
